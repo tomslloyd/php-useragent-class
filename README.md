@@ -9,7 +9,7 @@ PHP User Agent Class, used for the following
  - inludes geoip fuctions (php_goip_exstention installed on server)
  
  ## Usage 
- 
+ ```php
  $UA = new UserAgent; 
  
  echo $UA->IP(); // returns IP  
@@ -19,3 +19,4 @@ PHP User Agent Class, used for the following
  }else{
   // if is not mobile
  }
+```
