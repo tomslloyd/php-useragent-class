@@ -10,8 +10,10 @@ PHP User Agent Class, used for the following
  
  ## Usage 
  
- $UA = new UserAgent;
- echo $UA->IP(); // returns IP
+ $UA = new UserAgent; 
+ 
+ echo $UA->IP(); // returns IP  
+ 
  if($UA->isMobile()){
   // if is mobile
  }else{
