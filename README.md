@@ -12,8 +12,9 @@ PHP User Agent Class, used for the following
  ```php
  $UA = new UserAgent; 
  
- echo $UA->IP(); // returns IP  
- 
+ echo $UA->IP(); // returns IP if detected
+ echo $UA->Browser(); // returns browser name ie Chrome if detected
+ echo $UA->OS(); // returns Operating System of Device if detected
  if($UA->isMobile()){
   // if is mobile
  }else{
