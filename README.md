@@ -13,8 +13,8 @@ PHP User Agent Class, used for the following
  $UA = new UserAgent; 
  
  echo $UA->IP(); // returns IP if detected
- echo $UA->Browser(); // returns browser name ie Chrome is detected
- echo $UA->OS(); // returns Operating System of Device is detected
+ echo $UA->Browser(); // returns browser name ie Chrome if detected
+ echo $UA->OS(); // returns Operating System of Device if detected
  if($UA->isMobile()){
   // if is mobile
  }else{
