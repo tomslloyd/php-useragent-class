@@ -2,72 +2,74 @@
 /*
 PHP User Agent Class
 Author: Tom Lloyd
+Company: TSL Designs
 Date: 01/01/2015
 */
 class UserAgent {
+
 	public $os_array = array(
-			'/windows nt 10/i'      =>  'Windows 10',
-			'/windows phone 10/i'   =>  'Windows Phone 10',
-			'/windows phone 8.1/i'  =>  'Windows Phone 8.1',
-			'/windows phone 8/i'    =>  'Windows Phone 8',
-			'/windows nt 6.3/i'     =>  'Windows 8.1',
-			'/windows nt 6.2/i'     =>  'Windows 8',
-			'/windows nt 6.1/i'     =>  'Windows 7',
-			'/windows nt 6.0/i'     =>  'Windows Vista',
-			'/windows nt 5.2/i'     =>  'Windows Server 2003/XP x64',
-			'/windows nt 5.1/i'     =>  'Windows XP',
-			'/windows xp/i'         =>  'Windows XP',
-			'/windows nt 5.0/i'     =>  'Windows 2000',
-			'/windows me/i'         =>  'Windows ME',
-			'/win98/i'              =>  'Windows 98',
-			'/win95/i'              =>  'Windows 95',
-			'/win16/i'              =>  'Windows 3.11',
-			'/macintosh|mac os x/i' =>  'Mac OS X',
-			'/mac_powerpc/i'        =>  'Mac OS 9',
-			'/iphone/i'             =>  'iPhone',
-			'/ipod/i'               =>  'iPod',
-			'/ipad/i'               =>  'iPad',
-			'/android/i'            =>  'Android',
-			'/linux/i'              =>  'Linux',
-			'/ubuntu/i'             =>  'Ubuntu',
-			'/blackberry/i'         =>  'BlackBerry',
-			'/webos/i'              =>  'Mobile'
+		'/windows nt 10/i'      =>  'Windows 10',
+		'/windows phone 10/i'   =>  'Windows Phone 10',
+		'/windows phone 8.1/i'  =>  'Windows Phone 8.1',
+		'/windows phone 8/i'    =>  'Windows Phone 8',
+		'/windows nt 6.3/i'     =>  'Windows 8.1',
+		'/windows nt 6.2/i'     =>  'Windows 8',
+		'/windows nt 6.1/i'     =>  'Windows 7',
+		'/windows nt 6.0/i'     =>  'Windows Vista',
+		'/windows nt 5.2/i'     =>  'Windows Server 2003/XP x64',
+		'/windows nt 5.1/i'     =>  'Windows XP',
+		'/windows xp/i'         =>  'Windows XP',
+		'/windows nt 5.0/i'     =>  'Windows 2000',
+		'/windows me/i'         =>  'Windows ME',
+		'/win98/i'              =>  'Windows 98',
+		'/win95/i'              =>  'Windows 95',
+		'/win16/i'              =>  'Windows 3.11',
+		'/macintosh|mac os x/i' =>  'Mac OS X',
+		'/mac_powerpc/i'        =>  'Mac OS 9',
+		'/iphone/i'             =>  'iPhone',
+		'/ipod/i'               =>  'iPod',
+		'/ipad/i'               =>  'iPad',
+		'/android/i'            =>  'Android',
+		'/linux/i'              =>  'Linux',
+		'/ubuntu/i'             =>  'Ubuntu',
+		'/blackberry/i'         =>  'BlackBerry',
+		'/webos/i'              =>  'Mobile'
 		);
  	public $browser_array = array(
-			'/mobile/i'     =>  'Handheld Browser',
-			'/msie/i'       =>  'Internet Explorer',
-			'/firefox/i'    =>  'Firefox',
-			'/safari/i'     =>  'Safari',
-			'/chrome/i'     =>  'Chrome',
-			'/edge/i'       =>  'Edge',
-			'/opera/i'      =>  'Opera',
-			'/netscape/i'   =>  'Netscape',
-			'/maxthon/i'    =>  'Maxthon',
-			'/konqueror/i'  =>  'Konqueror'
+		'/mobile/i'     =>  'Handheld Browser',
+		'/msie/i'       =>  'Internet Explorer',
+		'/firefox/i'    =>  'Firefox',
+		'/safari/i'     =>  'Safari',
+		'/chrome/i'     =>  'Chrome',
+		'/edge/i'       =>  'Edge',
+		'/opera/i'      =>  'Opera',
+		'/netscape/i'   =>  'Netscape',
+		'/maxthon/i'    =>  'Maxthon',
+		'/konqueror/i'  =>  'Konqueror'
 		);
  	public $isps = array(
-			'/virgin media/i'			=>  'Virgin Media',
-			'/bt|british telecom|britishtelecom/i'	=>  'BT', // confirmed
-			'/talktalk/i'    			=>  'TalkTalk',
-			'/skybroadband|sky/i'			=>  'Sky Broadband', // confirmed
-			'/plusnet/i'				=>  'Plusnet',
-			'/three/i'				=>  'Three',
-			'/ee/i'					=>  'EE',
-			'/nowtv| now tv/i'			=>  'Now TV',
-			'/xlnbroadband|xln broadband/i'		=>  'XLN Broadband',
-			'/vodafone/i'				=>  'Vodafone',
-			'/sse/i'				=>  'SSE',
-			'/postoffice|post office/i'		=>  'Post Office',
-			'/vondage/i'				=>  'Vondage',
-			'/johnlewis|john lewis/i'		=>  'John Lewis',
-			'/tmobile|t mobile|t-mobile/i'		=>  'T-Mobile',
-			'/orange/i'				=>  'Orange',
-			'/tesco/i'				=>  'Tesco',
-			'/tiscali/i'				=>  'Tiscali',
-			'/aol/i'				=>  'AOL',
-			'/tentel/i'				=>  'TenTel',
-			'/myvzw/i'				=>  'Verizon Trademark Services LLC',
-			'/verizon/i'				=>  'Verizon'
+		'/virgin media/i'			=>  'Virgin Media',
+		'/bt|british telecom|britishtelecom/i'	=>  'BT', // confirmed
+		'/talktalk/i'    			=>  'TalkTalk',
+		'/skybroadband|sky/i'			=>  'Sky Broadband', // confirmed
+		'/plusnet/i'				=>  'Plusnet',
+		'/three/i'				=>  'Three',
+		'/ee/i'					=>  'EE',
+		'/nowtv| now tv/i'			=>  'Now TV',
+		'/xlnbroadband|xln broadband/i'		=>  'XLN Broadband',
+		'/vodafone/i'				=>  'Vodafone',
+		'/sse/i'				=>  'SSE',
+		'/postoffice|post office/i'		=>  'Post Office',
+		'/vondage/i'				=>  'Vondage',
+		'/johnlewis|john lewis/i'		=>  'John Lewis',
+		'/tmobile|t mobile|t-mobile/i'		=>  'T-Mobile',
+		'/orange/i'				=>  'Orange',
+		'/tesco/i'				=>  'Tesco',
+		'/tiscali/i'				=>  'Tiscali',
+		'/aol/i'				=>  'AOL',
+		'/tentel/i'				=>  'TenTel',
+		'/myvzw/i'				=>  'Verizon Trademark Services LLC',
+		'/verizon/i'				=>  'Verizon'
 		);	
 	public $os_platform = "OS Platform not Detected.";
 	public $browser = "Browser not Detected.";
@@ -200,4 +202,3 @@ class UserAgent {
 		return $this->user_agent;
 	}
 }
-?>
