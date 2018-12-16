@@ -34,7 +34,7 @@ class UserAgent {
 		'/ubuntu/i'             =>  'Ubuntu',
 		'/blackberry/i'         =>  'BlackBerry',
 		'/webos/i'              =>  'Mobile'
-		);
+	);
  	public $browser_array = array(
 		'/mobile/i'     =>  'Handheld Browser',
 		'/msie/i'       =>  'Internet Explorer',
@@ -46,7 +46,7 @@ class UserAgent {
 		'/netscape/i'   =>  'Netscape',
 		'/maxthon/i'    =>  'Maxthon',
 		'/konqueror/i'  =>  'Konqueror'
-		);
+	);
  	public $isps = array(
 		'/virgin media/i'			=>  'Virgin Media',
 		'/bt|british telecom|britishtelecom/i'	=>  'BT', // confirmed
@@ -70,7 +70,7 @@ class UserAgent {
 		'/tentel/i'				=>  'TenTel',
 		'/myvzw/i'				=>  'Verizon Trademark Services LLC',
 		'/verizon/i'				=>  'Verizon'
-		);	
+	);
 	public $os_platform = "OS Platform not Detected.";
 	public $browser = "Browser not Detected.";
 	public $isp = "ISP Not Detected.";
