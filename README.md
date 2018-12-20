@@ -6,7 +6,7 @@ PHP User Agent Class, used for the following
  - User Host
  - User IP
  - Detect ISP (UK Only)
- - inludes geoip fuctions (php_goip_exstention required and installed on server)
+ - includes geoip fuctions (php_goip_exstention required and installed on server)
  
  ## Usage 
  ```php
